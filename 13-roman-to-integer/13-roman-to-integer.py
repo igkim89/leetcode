@@ -15,12 +15,8 @@ class Solution:
         
         if len(s) > 1:
             for i in range(1, len(s)):
-                if s[i] in ('V', 'X') and s[i-1] == 'I':
-                    sum -= 2
-                elif s[i] in ('L', 'C') and s[i-1] == 'X':
-                    sum -= 20
-                elif s[i] in ('D', 'M') and s[i-1] == 'C':
-                    sum -= 200
+                if (s[i] in ('V', 'X') and s[i-1] == 'I') or (s[i] in ('L', 'C') and s[i-1] == 'X') or (s[i] in ('D', 'M') and s[i-1] == 'C'):
+                    sum -= (roman_dict[s[i-1]] * 2)
                 sum += roman_dict[s[i]]
                 
         return sum
