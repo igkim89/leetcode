@@ -1,2 +1,2 @@
 # leetcode
-leetcode history
+leetcode study history
