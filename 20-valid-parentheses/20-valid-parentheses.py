@@ -3,7 +3,11 @@ class Solution:
         
         stack = []
         
-        dict = {")": "(", "}": "{", "]": "["}
+        dict = {
+            ")": "(", 
+            "}": "{", 
+            "]": "[",
+        }
         
         for i in s:
             if i in dict:
