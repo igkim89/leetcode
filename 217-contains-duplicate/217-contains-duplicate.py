@@ -7,3 +7,12 @@ class Solution:
             
         return True if len(data_set) != len(nums) else False
         
+#         data_list = []
+        
+#         for i in nums:
+#             if i in data_list:
+#                 return True
+#             else:
+#                 data_list.append(i)
+        
+#         return False
