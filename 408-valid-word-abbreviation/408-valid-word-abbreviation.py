@@ -5,14 +5,14 @@ class Solution:
             if(abbr[j].isdigit()):
                 if(abbr[j] == '0' and digit == 0):
                     return False
-                digit = (digit*10)+int(abbr[j])
+                digit = (digit*10) + int(abbr[j])
 
             else:
-                i = i+digit
+                i = i + digit
                 digit = 0
                 if(i >= len(word) or abbr[j] != word[i]):
                     return False
-                i = i+1
-            j = j+1
+                i += 1
+            j += 1
 
         return (len(word[i:]) == digit)
