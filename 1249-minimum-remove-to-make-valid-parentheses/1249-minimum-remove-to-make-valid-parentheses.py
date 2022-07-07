@@ -20,3 +20,6 @@ class Solution:
                 result += c
             
         return result
+
+    #오늘의 가르침
+    #중복이 없는 경우 set을 쓰자 짱짱 빠르다
